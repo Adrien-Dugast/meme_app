@@ -11,13 +11,16 @@ def charge_list_refs():
     return(list_refs)
 
 def display_random_video(list_refs):
+    st.text('coucou 1')
     if len(list_refs)==0:
         list_refs = charge_list_refs()
         if len(list_refs)==0:
             st.text("oups aucune ref dans la liste, c'est un bug...")
+    st.text('coucou 2')
     url = random.choice(list_refs)
     list_refs.remove(url)
     webbrowser.open_new_tab(url)
+    st.text('coucou 3')
     return(list_refs)
 
 list_refs = charge_list_refs()
