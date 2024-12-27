@@ -35,4 +35,7 @@ a = st.button("Je veux devenir quelqu'un de cultivé et intéressant en sociét�
 
 
 if a:
+    st.text('Bouton appuyé')
+    st.text(f"{len(list_refs)} refs dans la liste")
     list_refs = display_random_video(list_refs)
+    
