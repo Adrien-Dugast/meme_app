@@ -42,7 +42,7 @@ if a:
     st.text(f"{len(list_refs)} refs dans la liste")
     video_file = open("Jeux1.mp4", "rb")
     video_bytes = video_file.read()
-    st.video(video_bytes)
+    st.video(video_bytes, autoplay = True)
 
     list_refs = display_random_video(list_refs)
     
