@@ -40,5 +40,9 @@ a = st.button("Je veux devenir quelqu'un de cultivé et intéressant en sociét�
 if a:
     st.text('Bouton appuyé')
     st.text(f"{len(list_refs)} refs dans la liste")
+    video_file = open("Jeux1.mp4", "rb")
+    video_bytes = video_file.read()
+    st.video(video_bytes)
+
     list_refs = display_random_video(list_refs)
     
