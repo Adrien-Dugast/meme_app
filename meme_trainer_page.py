@@ -3,7 +3,7 @@ import webbrowser
 import random
 import os
 
-def display_random_video(list_refs):
+def display_random_video():
     list_vids = os.listdir('videos')
     vid_to_display = random.choice(list_vids)
     video_file = open("Jeux1.mp4", "rb")
