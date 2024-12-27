@@ -6,9 +6,11 @@ import os
 def display_random_video():
     list_vids = os.listdir('videos')
     vid_to_display = random.choice(list_vids)
-    path_to_video = os.path.join('video',vid_to_display)
+    path_to_video = os.path.join('videos',vid_to_display)
     video_file = open(path_to_video, "rb")
     video_bytes = video_file.read()
+
+    st.header(vid_to_display[:-4])
     st.video(video_bytes, autoplay = True)
 
 
