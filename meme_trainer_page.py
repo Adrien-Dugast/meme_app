@@ -2,6 +2,18 @@ import streamlit as st
 import webbrowser
 import random
 import os
+import json
+import pickle as pkl
+import datetime
+
+# if 'list_used.pkl' in os.listdir():
+#     with open('list_used.pkl','r') as f:
+#         dict_IP = pkl.load(f) 
+# else:
+#     dict_IP = []
+
+# # if st.session_state()
+# dict_IP.append("rajouter l'IP, checker que c'est pas la même session ?")
 
 def display_random_video():
     list_vids = os.listdir('videos')

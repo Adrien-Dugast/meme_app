@@ -12,7 +12,8 @@ pages = {
         st.Page('homepage.py', title = "Home page")
     ],
     "Applications" : [
-        st.Page("meme_trainer_page.py", title = "Meme trainer")
+        st.Page("meme_trainer_page.py", title = "Meme trainer"),
+        st.Page("quizz_meme.py", title = "Quizz même")
     ]
 
 }
