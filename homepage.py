@@ -10,5 +10,5 @@ st.text('''
         ''')
 
 f = open("log.txt", 'a')
-f.write(datetime.datetime.now())
+f.write("eheheh")
 f.close()
