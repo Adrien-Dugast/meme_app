@@ -7,5 +7,3 @@ st.text('''
         J'ai créé ce site pour mettre un peu toutes mes conneries, je sais pas à quel point ça va 
         marcher ni à quel point je vais en mettre mais bon ça m'amuse donc je le fais.
         ''')
-
-st.text('update ici')
